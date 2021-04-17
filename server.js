@@ -31,6 +31,6 @@ demos(app);
 
 require("./controllers/quizzes-controller")(app)
 require("./controllers/question-controller")(app)
-
+require('./controllers/quiz-attempts-controller')(app)
 
 app.listen(process.env.PORT || 3001)
