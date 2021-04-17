@@ -1,5 +1,7 @@
 const express = require('express')
+const bodyParser = require('body-parser');
 const app = express()
+app.use(bodyParser.json());
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://testUser:wFdlWYZNxEFJJK63@cluster0.ltsfu.mongodb.net/whiteboard?retryWrites=true&w=majority',
